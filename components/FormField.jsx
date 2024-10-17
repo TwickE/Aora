@@ -18,7 +18,7 @@ const FormField = ({ title, value, placeholder, handleChangeText, otherStyles, .
                     placeholderTextColor='#7b7b8b'
                     onChangeText={handleChangeText}
                     secureTextEntry={title === 'Password' && !showPassword}
-                    keyboardType={title !== 'Password' ? props.keyboardType : 'default'}
+                    keyboardType={props.keyboardType}
                     autoCapitalize='none'
                     autoCorrect={false}
                 />
