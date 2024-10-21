@@ -10,7 +10,7 @@ export default function App() {
     const { isLoading, isLoggedIn } = useGlobalContext()
 
     if(!isLoading && isLoggedIn) {
-        return <Redirect to="/home" />
+        return <Redirect href="/home" />
     }
   return (
     <SafeAreaView className="bg-primary h-full">

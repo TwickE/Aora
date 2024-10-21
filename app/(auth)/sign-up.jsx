@@ -8,6 +8,7 @@ import { Link } from 'expo-router'
 import { createUser } from '../../lib/appwrite'
 import { Alert } from 'react-native'
 import { router } from 'expo-router';
+import { useGlobalContext } from "../../context/GlobalProvider";
 
 const SignUp = () => {
     const [form, setform] = useState({
@@ -16,6 +17,7 @@ const SignUp = () => {
         password: ''
     })
     const [isSubmmiting, setIsSubmmiting] = useState(false)
+    const { setUser, setIsLoggedIn } = useGlobalContext();
 
     const submit = async () => {
         if(!form.userName || !form.email || !form.password) {
