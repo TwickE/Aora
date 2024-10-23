@@ -1,5 +1,5 @@
 # Aora
-Aora is a mobile app for iOS and Android built in React Native with Expo
+Aora is a mobile app for iOS and Android built in React Native with Expo, Tailwind CSS and Appwrite for back-end
 
 # Aora Onboarding, Sign In and Sign Up Screens
 ![Aora Onboarding, Sign In and Sign Up Screens](https://github.com/TwickE/ReadmeImages/blob/main/Aora1.png?raw=true)
