@@ -1,4 +1,4 @@
-import { View, Text, FlatList, TouchableOpacity, ImageBackground, Image } from 'react-native'
+import { FlatList, TouchableOpacity, ImageBackground, Image } from 'react-native'
 import * as Animatable from 'react-native-animatable'
 import { useState } from 'react'
 import { icons } from '../constants'
@@ -90,7 +90,6 @@ const Trending = ({ posts }) => {
             viewabilityConfig={{
                 itemVisiblePercentThreshold: 70
             }}
-            contentOffset={{ x: 170 }}
             horizontal
         />
     )

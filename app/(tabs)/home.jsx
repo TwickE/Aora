@@ -12,7 +12,7 @@ import VideoCard from '../../components/VideoCard'
 import { useGlobalContext } from '../../context/GlobalProvider'
 
 const Home = () => {
-    const { user, setUser, setIsLoggedIn } = useGlobalContext()
+    const { user } = useGlobalContext()
     const [refreshing, setRefreshing] = useState(false)
     const { data: posts, refetch } = useAppwrite(getAllPosts)
     const { data: latestPosts } = useAppwrite(getLatestPosts)
@@ -24,7 +24,7 @@ const Home = () => {
     }
 
     return (
-        <SafeAreaView className="bg-primary h-full">
+        <SafeAreaView className="bg-primary h-full" edges={['top', 'left', 'right']}>
             <FlatList
                 data={posts}
                 keyExtractor={(item) => item.$id}
